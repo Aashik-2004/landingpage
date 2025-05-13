@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgb(22,38,109);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#about {
+    padding: 50px;
+    background-color:#fff;
+    color: rgb(22,38,109);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+.button{
+    width: 100px;
+    height: 20px;
+    color: #fff;
+    background-color: rgb(22,38,109);
+    margin-top: 1rem;
+}
+#bus{
+    padding: 50px;
+    background-color :rgb(22,38,109) ;
+    color:#fff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+.button1{
+    width: 100px;
+    height: 20px;
+    background-color: #fff;
+    color: rgb(22,38,109);
+    margin-top: 1rem;
+}
+#auto{
+    padding: 50px;
+    color :rgb(22,38,109) ;
+    background-color:#fff;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.image-container img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+.button2{
+    width: 100px;
+    height: 20px;
+    color: #fff;
+    background-color: rgb(22,38,109);
+    margin-top: 1rem;
+}
+#car{
+    padding: 50px;
+    background-color :rgb(22,38,109) ;
+    color:#fff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+.button3{
+    width: 100px;
+    height: 20px;
+    background-color: #fff;
+    color: rgb(22,38,109);
+    margin-top: 1rem;
+}
+#airline{
+    padding: 50px;
+    color :rgb(22,38,109) ;
+    background-color:#fff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+.button4{
+    width: 100px;
+    height: 20px;
+    color: #fff;
+    background-color: rgb(22,38,109);
+    margin-top: 1rem;
+}
+
+footer {
+    background: rgb(22,38,109);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Taxi - Cab Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #d32f2f;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffeb3b;
+        }
+
+        .hero {
+            background: url('red-taxi-banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .search-container {
+            background: white;
+            width: 60%;
+            margin: -40px auto 20px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+        }
+
+        .search-container input, .search-container button {
+            flex: 1;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .search-container button {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .search-container button:hover {
+            background-color: #b71c1c;
+        }
+
+        .cab-list {
+            width: 75%;
+            margin: auto;
+        }
+
+        .cab-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cab-card h3 {
+            margin: 0;
+            color: #d32f2f;
+        }
+
+        .cab-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .cab-card button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+
+        .cab-card button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+        Book Your Ride with Red Taxi!
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Enter Pickup Location" required>
+        <input type="text" placeholder="Enter Drop Location" required>
+        <input type="time" required>
+        <button>Search Cabs</button>
+    </div>
+    <div class="cab-list">
+        <div class="cab-card">
+            <div>
+                <h3>Red Taxi - Compact</h3>
+                <p>Driver: Ramesh Kumar</p>
+                <p>Fare: ₹300</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="cab-card">
+            <div>
+                <h3>Red Taxi - Sedan</h3>
+                <p>Driver: Arjun Patel</p>
+                <p>Fare: ₹400</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="cab-card">
+            <div>
+                <h3>Red Taxi - SUV</h3>
+                <p>Driver: Karthik Sharma</p>
+                <p>Fare: ₹500</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: yellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('auto-bg.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+        }
+
+        .search-container {
+            background: white;
+            width: 80%;
+            margin: -50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+        }
+
+        .search-container input, .search-container select, .search-container button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        .search-container button:hover {
+            background-color: #555;
+        }
+
+        .auto-list {
+            width: 80%;
+            margin: auto;
+        }
+
+        .auto-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .auto-card button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .auto-card button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+        Book Your Auto Ride Instantly!
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Pickup Location" required>
+        <input type="text" placeholder="Drop Location" required>
+        <input type="time" required>
+        <button>Find Auto</button>
+    </div>
+    <div class="auto-list">
+        <div class="auto-card">
+            <div>
+                <h3>Auto No: TN 01 A 1234</h3>
+                <p>Driver: Ravi Kumar</p>
+                <p>Fare: ₹100</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="auto-card">
+            <div>
+                <h3>Auto No: TN 02 B 5678</h3>
+                <p>Driver: Arjun Sharma</p>
+                <p>Fare: ₹120</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="auto-card">
+            <div>
+                <h3>Auto No: TN 03 C 9101</h3>
+                <p>Driver: Mohan Das</p>
+                <p>Fare: ₹90</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+    </div>
+</body>
+</html>

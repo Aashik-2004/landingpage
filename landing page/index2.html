@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking - RedBus Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #d32f2f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #b71c1c;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('bus-bg.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .search-container {
+            background: white;
+            width: 80%;
+            margin: -50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+        }
+
+        .search-container input, .search-container select, .search-container button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            background-color: #d32f2f;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        .search-container button:hover {
+            background-color: #b71c1c;
+        }
+
+        .bus-list {
+            width: 80%;
+            margin: auto;
+        }
+
+        .bus-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bus-card button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .bus-card button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+        Book Your Bus Ticket Easily!
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="From" required>
+        <input type="text" placeholder="To" required>
+        <input type="date" required>
+        <button>Search Buses</button>
+    </div>
+    <div class="bus-list">
+        <div class="bus-card">
+            <div>
+                <h3>Express 101</h3>
+                <p>Departure: 10:00 AM | Arrival: 6:00 PM</p>
+                <p>AC Sleeper | ₹500</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="bus-card">
+            <div>
+                <h3>Superfast 202</h3>
+                <p>Departure: 12:00 PM | Arrival: 8:00 PM</p>
+                <p>Non-AC | ₹350</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+        <div class="bus-card">
+            <div>
+                <h3>Local 303</h3>
+                <p>Departure: 2:00 PM | Arrival: 10:00 PM</p>
+                <p>AC Volvo | ₹700</p>
+            </div>
+            <button>Book Now</button>
+        </div>
+    </div>
+</body>
+</html>
